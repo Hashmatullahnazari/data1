@@ -4,10 +4,10 @@
 
 <head>
     <title>HTML, CSS and JavaScript demo</title>
-    <link rel="stylesheet" href="../admin/style.css" media="all">
+    <link rel="stylesheet" href="../admin/includes/style.css" media="all">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-       <script src="https://cdn.tiny.cloud/1/qagffr3pkuv17a8on1afax661irst1hbr4e6tbv888sz91jc/tinymce/5-stable/tinymce.min.js"></script>
-       
+      <script src="https://cdn.ckeditor.com/ckeditor5/34.2.0/classic/ckeditor.js"></script>
+
     
 </head>
 
@@ -100,7 +100,7 @@ echo "<option value='$cat_id'>$cat_title</option>";
       
       
       <div class="col-75">
-        <textarea  id="basic-example" name="post_content" placeholder="Write something.." style="height:200px"></textarea>
+        <textarea  id="editor" name="post_content" placeholder="Write something.." style="height:200px"></textarea>
       </div>
     </div>
     

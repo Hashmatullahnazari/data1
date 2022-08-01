@@ -1,17 +1,8 @@
 
-           
-           
-           
-           
-           
-           
-    
-           
-           <div class="leftcolumn">
-           
-            <div class="card">
-            
-    <?php
+<div class="card">
+     <h1 align='center'>Recent Stories</h1>
+
+     <?php
     include('includes/database.php');
 
     $get_posts = "select * from posts order by 1 DESC LIMIT 0,5";
@@ -25,11 +16,12 @@
         $post_title   =   $row_posts['post_title'];
         $post_image   =   $row_posts['post_image'];
         
-        echo "
+        echo"
         
         
         <h2><a href='details.php?post=$post_id'>$post_title</a></h2>
-          <div><img src='admin/fresh_images/$post_image'></div>
+        <img class='fakeimg' src='admin/news_images/$post_image'>
+
         
         
         ";
@@ -43,10 +35,7 @@
     
 
     ?>
-               
-          
-            </div>
-       
-            
-        </div>
         
+      
+   
+</div>

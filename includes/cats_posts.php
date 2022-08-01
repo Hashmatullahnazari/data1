@@ -1,7 +1,6 @@
 
 
 
-
           
                     <?php
     include('includes/database.php');
@@ -27,8 +26,8 @@
         
         <h2><a id='ltitle' href='details.php?post=$post_id'>$post_title</a></h2>
         <h5><i>Posted by&colon;</i>&nbsp;$post_author &nbsp;$post_date &nbsp;</h5>
-        <img class='' src='admin/fresh_images/$post_image'>
-        <p>$post_content <a href='details.php?post=$post_id' id='rmlink'>Read More</a></p>
+        <img class='fakeimg' src='admin/news_images/$post_image'>
+        <p>$post_content <a id='rmlink' href='details.php?post=$post_id'>Read More</a></p>
 
         
         

@@ -1,24 +1,31 @@
-
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>HTML, CSS and JavaScript demo</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles/style.css" media="all">
+
+<title>A News Platform</title>
 </head>
-
 <body>
-<div class='row'>
+
+<!-- header start -->
+<div class="header">
+  <a href="index.php"><h2>Blog Name</h2></a>
+</div>
+
+<!-- header end -->
+
+<!-- navigation bar start -->
 <?php include('includes/navbar.php');?>
+<!-- navigation bar end -->
 
 
-<?php include('includes/post_left.php');?>
-     
-
-
-<div class='middlecolumn'>
-
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+    
+    
      <?php
         
     include('includes/database.php');
@@ -41,19 +48,14 @@
         $post_image   =   $row_posts['post_image'];
         $post_content =   $row_posts['post_content'];
         
-        echo "
+        echo"
         
-        <div class='card'>
-                <h2>$post_title</h2>
-                 <h5>$post_author</h5>
-                <h5>$post_date</h5>
-                
-                <div><img class='' src='admin/fresh_images/$post_image'></div>
-               
-                <p>$post_content</p>
-            </div>
-            
-            ";
+        <h2>$post_title</h2>
+        <h5><i>Posted by  &nbsp; $post_author &nbsp;$post_date</h5>
+        <img class='fakeimg' src='admin/news_images/$post_image'>
+        <p>$post_content</p>
+        
+        ";
         
     
         
@@ -63,20 +65,29 @@
     }
     }
     ?>
+        
+        
 
-
-      <?php include('includes/comment_form.php');?>
-
-
- 
-   </div>
    
-      <?php include('includes/post_right.php');?>
-      
-      
-    </div>
-    
-     <script src='js/app.js'></script>
-</body>
+    </div>   
+    <?php include('includes/comment_form.php'); ?>
 
+  </div>
+  
+  
+  <div class="rightcolumn">
+<?php include('includes/sidebar.php');?>
+  </div>
+ 
+  
+  
+</div>
+
+
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+    
+</body>
 </html>
