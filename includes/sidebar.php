@@ -1,5 +1,4 @@
 
-<div class="card">
      <h1 align='center'>Recent Stories</h1>
 
      <?php
@@ -19,10 +18,11 @@
         echo"
         
         
+<div class='card'>
         <h2><a href='details.php?post=$post_id'>$post_title</a></h2>
         <img class='fakeimg' src='admin/news_images/$post_image'>
 
-        
+        </div>
         
         ";
         
@@ -38,4 +38,3 @@
         
       
    
-</div>

@@ -1,8 +1,18 @@
-       <div class="leftcolumn">
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="styles/style.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+
+<title>A News Platform</title>
+</head>
+<body>
 
      
-     <div class="card">
+  
      
      <?php
     include('includes/database.php');
@@ -24,16 +34,16 @@
         $post_content =   substr($row_posts['post_content'],0,300);
         
         echo "
-        
-        <h2><a id='ltitle' href='details.php?post=$post_id'>$post_title</h2>
-        
-        <h5><i>Posted by&colon;</i>&nbsp;$post_author &nbsp;$post_date</b></h5>
-        
-        <img class='fakeimg' src='admin/news_images/$post_image'>
-        
-        <p>$post_content <a id='rmlink' href='details.php?post=$post_id'>Read More</a></p>
-
-        
+       <div class='card'>
+                <h2><a id='ltitle' href='details.php?post=$post_id'>$post_title</a></h2>
+                 <h5>$post_author</h5>
+                <h5>$post_date</h5>
+                
+                <div><img src='admin/news_images/$post_image'></div>
+               
+                <p>$post_content <br><a class='btn' href='details.php?post=$post_id'>Read More
+                </a></p>
+            </div>
         
         ";
         
@@ -63,13 +73,17 @@
         $post_content =   substr($row_posts['post_content'],0,300);
         
         echo "
+        <div class='card'>
+                <h2><a id='ltitle' href='details.php?post=$post_id'>$post_title</a></h2>
+                 <h5>$post_author</h5>
+                <h5>$post_date</h5>
+                
+                <div><img src='admin/news_images/$post_image'></div>
+               
+                <p>$post_content <br><a class='btn' href='details.php?post=$post_id'>Read More
+                </a></p>
+            </div>
         
-        <h2><a id='ltitle' href='details.php?post=$post_id'>$post_title</a></h2>
-        
-        <h5><i>Posted by&colon;</i>&nbsp;$post_author &nbsp;$post_date</h5>
-        <img class='fakeimg' src='admin/news_images/$post_image'>
-        <p>$post_content <a id='rmlink' href='details.php?post=$post_id'>Read More</a></p>
-
         
         
         ";
@@ -82,6 +96,7 @@
     }
 
 ?>
+     <script src="js/app.js"></script>
+</body>
+</html>
 
-</div>
-  </div>

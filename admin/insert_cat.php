@@ -18,6 +18,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+<link rel="stylesheet" href="../admin/sty.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://cdn.ckeditor.com/ckeditor5/34.2.0/classic/ckeditor.js"></script>
     
     <form action="index.php?insert_cat" method="post">
         <b>Insert new category</b><input type="text" name="new_cat">

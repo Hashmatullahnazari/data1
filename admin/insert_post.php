@@ -4,7 +4,7 @@
 
 <head>
     <title>HTML, CSS and JavaScript demo</title>
-    <link rel="stylesheet" href="../admin/includes/style.css" media="all">
+  <link rel="stylesheet" href="../admin/sty.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <script src="https://cdn.ckeditor.com/ckeditor5/34.2.0/classic/ckeditor.js"></script>
 
@@ -20,7 +20,7 @@
  
 
  <div class="container">
- <form action="insert_post.php" method="post" enctype="multipart/form-data">
+ <form action="index.php?insert_post" method="post" enctype="multipart/form-data">
     <div class="row">
       <div class="col-25">
         <label for="fname">Post Title</label>
@@ -142,7 +142,7 @@ else
 {
 
 
-move_uploaded_file($post_image_tmp,"fresh_images/$post_image");
+move_uploaded_file($post_image_tmp,"news_images/$post_image");
 
 
 $insert_posts = "insert into posts (category_id,post_title,post_date,post_author,post_keywords,post_image,post_content) 
@@ -154,7 +154,7 @@ $run_posts = mysqli_query($conn,$insert_posts);
 
 echo "<script>alert('your post has been published')</script>";
 
-echo "<script>window.open('insert_post.php','_self')</script>";
+echo "<script>window.open('index.php?insert_post','_self')</script>";
 
 
 

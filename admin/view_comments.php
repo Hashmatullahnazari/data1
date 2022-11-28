@@ -20,10 +20,11 @@ else {
 <head>
 <meta charset="UTF-8">
 <title>Document</title>
+<link rel="stylesheet" href="../admin/sty.css">
 </head>
 <body>
 
-<table width="600" align="center" border="3">
+<table width="1000" align="center" border="3">
 
 <tr>
 

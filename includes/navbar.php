@@ -1,8 +1,6 @@
 
     
-
-    
-<div class="topnav">
+<div class="topnav" id="myTopnav"> 
 
     <?php
     include('includes/database.php');
@@ -24,9 +22,12 @@
 
     <div class="search-container">
     <form method="get"  action="results.php" enctype="multipart/form-data">
-      <input type="text"  name="search_query"/>
-      <input type="submit"  name="search" value="Search Now"/>
+       <input type="text" placeholder="Search.." name="search_query">
+        <button type="submit" name="search" ><i class="fa fa-search"></i></button>
     </form>
     </div>
+     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
   
 </div>

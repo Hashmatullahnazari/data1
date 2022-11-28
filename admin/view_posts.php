@@ -20,10 +20,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="../admin/sty.css">
 </head>
 <body>
    
-  <table width="600" align="center" border="3">
+  <table width="50%" align="center" border="3">
     
     <tr>
        
@@ -88,7 +89,7 @@
             
         </td>
         <td><a href="index.php?edit_post=<?php echo $post_id; ?>">Edit</a></td>
-        <td><a href="includes/delete_post.php?delete_post=<?php echo $post_id; ?>">Delete</a></td>
+        <td><a href="delete_post.php?delete_post=<?php echo $post_id; ?>">Delete</a></td>
     </tr>
    
    <?php } ?>

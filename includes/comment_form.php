@@ -17,6 +17,37 @@ $post_new_id=$row['post_id'];
 
 }
 ?>
+
+<form method="post" action="details.php?post=<?php echo $post_new_id; ?>">
+<table width="50%">
+
+<tr>  
+<td>Your Name</td>
+<td align=""><input type="text" name="comment_name" /></td>
+</tr>
+
+<tr>
+<td> Your Email:</td>
+<td align=""><input type="text" name="comment_email" /></td>
+</tr>
+
+<tr>
+<td>Your Comment:</td>
+<td><textarea rows="4" cols="50" align="center"  name="comment" colspan="" rows="5"></textarea></td>
+</tr>
+
+<tr>
+<td align="center" colspan="5"><input type="submit" name="submit" value="Post Comment"></td>
+
+</tr>
+
+
+</table>
+
+</form>
+
+
+
 <h3>Comment so far
 <?php
 
@@ -53,33 +84,7 @@ echo "<h3>$comment_text</h3>";
 
 
 
-<form method="post" action="details.php?post=<?php echo $post_new_id; ?>">
-<table width="500">
 
-<tr>  
-<td>Your Name</td>
-<td align=""><input type="text" name="comment_name" /></td>
-</tr>
-
-<tr>
-<td> Your Email:</td>
-<td align=""><input type="text" name="comment_email" /></td>
-</tr>
-
-<tr>
-<td>Your Comment:</td>
-<td><textarea align="center"  name="comment" colspan="10" rows="10"></textarea></td>
-</tr>
-
-<tr>
-<td align="center" colspan="5"><input type="submit" name="submit" value="Post Comment"></td>
-
-</tr>
-
-
-</table>
-
-</form>
 
 
 <?php
@@ -110,7 +115,7 @@ $run_query = mysqli_query($conn,$query_comment);
 
 echo "<script>alert('your comment is been reviewed please wait for approval')</script>";
 
-echo "<script>window.open('details.php?post=$post_id')</script>";
+//echo "<script>window.open('details.php?post=$post_id')</script>";
 
 
 

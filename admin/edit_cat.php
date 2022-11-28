@@ -19,6 +19,7 @@ else {
 <head>
 <meta charset="UTF-8">
 <title>Document</title>
+<link rel="stylesheet" href="../admin/style.css">
 
 </head>
 <body>
@@ -59,7 +60,7 @@ $cat_title = $row_cat['cat_title'];
 
 
 <?php
-  include('includes/database.php');
+  include('database.php');
 if(isset($_POST['update_cat'])){
 $cat_title = $_POST['new_cat'];
 

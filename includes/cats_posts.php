@@ -1,9 +1,5 @@
-
-
-
-          
-                    <?php
-    include('includes/database.php');
+                <?php
+    include('database.php');
 
         if(isset($_GET['cat'])){
        $cat_id = $_GET['cat'];
@@ -24,12 +20,12 @@
         
         echo "
         
-        <h2><a id='ltitle' href='details.php?post=$post_id'>$post_title</a></h2>
+<div class='card'>
+        <h2><a id='1title' href='details.php?post=$post_id'>$post_title</a></h2>
         <h5><i>Posted by&colon;</i>&nbsp;$post_author &nbsp;$post_date &nbsp;</h5>
         <img class='fakeimg' src='admin/news_images/$post_image'>
         <p>$post_content <a id='rmlink' href='details.php?post=$post_id'>Read More</a></p>
-
-        
+        </div>
         
         ";
         

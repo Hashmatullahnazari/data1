@@ -8,7 +8,7 @@ session_start();
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="../admin/syle_login.css" media="all">
+<link rel="stylesheet" href="../admin/style_login.css">
 </head>
 <body>
 

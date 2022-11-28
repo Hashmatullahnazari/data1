@@ -4,6 +4,7 @@
  <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="styles/style.css" media="all">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <title>A News Platform</title>
 </head>
@@ -64,9 +65,6 @@
         
     
         
-        
-        
-        
       }
     }
 
@@ -94,7 +92,12 @@
         <h2><a id='1title' href='details.php?post=$post_id'>$post_title</a></h2>
         <h5><i>Posted by&colon;</i>&nbsp;$post_author &nbsp;$post_date</h5>
         <img class='fakeimg' src='admin/news_images/$post_image'>
-        <p>$post_content <a id='rmlink' href='details.php?post=$post_id'> &nbsp Read More</a></p>
+        <p>$post_content <a id='rmlink' class='btn' href='details.php?post=$post_id'>Read More
+                </a></p>
+            
+               
+            </div>
+        
 
         
         

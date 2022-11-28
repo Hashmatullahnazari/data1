@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="styles/style.css" media="all">
+<link rel="stylesheet" href="styles/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 <title>A News Platform</title>
 </head>
 <body>
-
+<div class="contain">
 <!-- header start -->
 <div class="header">
   <a href="index.php"><h2>Blog Name</h2></a>
@@ -88,6 +90,6 @@
 <div class="footer">
   <h2>Footer</h2>
 </div>
-    
+    </div>
 </body>
 </html>
